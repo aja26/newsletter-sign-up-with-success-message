@@ -1,4 +1,4 @@
-const input = document.getElementById('input');
+const email = document.getElementById('email');
 const formC = document.getElementById('form-control');
 const btn = document.getElementById('btn');
 const front = document.getElementById('front');
@@ -6,14 +6,14 @@ const back = document.getElementById('back');
 const reset = document.getElementById('reset');
 
 btn.addEventListener('click', () => {
-    if(input.value > '' && input.value.includes('@')){
+    if(email.value > '' && email.value.includes('@')){
         console.log('it works');
         formC.classList.remove('error');
-        input.classList.remove('error');
+        email.classList.remove('error');
         displayConfirmation();
     } else{
         console.log('it does not work');
-        input.classList.add('error');
+        email.classList.add('error');
         formC.classList.add('error');
     }
 })
@@ -31,7 +31,5 @@ function displayConfirmation(){
 function removeConfirmation(){
     front.classList.remove('active');
     back.classList.remove('active')
-    input.value = '';
+    email.value = '';
 }
-
-
