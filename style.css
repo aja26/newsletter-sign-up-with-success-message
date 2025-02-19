@@ -141,7 +141,7 @@ input[type="subbmit"]{
     border: none;
 }
 
-input[type="subbmit"]:hover{
+input[type="submit"]:hover{
     background: linear-gradient(90deg, var(--pink) 0%, var(--tomato) 100%);
     font-weight: bold;
 }
